@@ -5,14 +5,8 @@ import Image from "next/image";
 import * as motion from "motion/react-client";
 import { getStorageUrl } from "@/lib/supabase/storage";
 
-// COMPONENTS
-import { Button } from "@/components/ui/button";
-
 // DATA
 import { artists } from "@/data/artists";
-
-// LUCIDE ICONS
-import { ArrowRight } from "lucide-react";
 
 export const FeaturedArtistsSection = () => {
   return (
@@ -57,18 +51,6 @@ export const FeaturedArtistsSection = () => {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-center mt-12"
-        >
-          <Button variant="secondary" size="lg" className="group">
-            View All Artists
-            <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
-          </Button>
-        </motion.div>
       </div>
     </section>
   );

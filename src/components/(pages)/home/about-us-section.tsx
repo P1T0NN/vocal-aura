@@ -1,11 +1,8 @@
 // LIBRARIES
 import * as motion from "motion/react-client";
 
-// COMPONENTS
-import { Button } from "@/components/ui/button";
-
 // LUCIDE ICONS
-import { ArrowRight, Music, Users, Star, Globe } from "lucide-react";
+import { Music, Users, Star, Globe } from "lucide-react";
 
 const features = [
     {
@@ -48,11 +45,6 @@ export const AboutSection = () => {
                             developing, and amplifying extraordinary vocal talent. Our mission is to bridge the gap between 
                             exceptional artists and global opportunities.
                         </p>
-
-                        <Button variant="secondary" size="lg" className="group">
-                            Learn More
-                            <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
-                        </Button>
                     </motion.div>
 
                     {/* Right Column - Features Grid */}

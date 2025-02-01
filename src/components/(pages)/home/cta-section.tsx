@@ -1,8 +1,12 @@
+// NEXTJS IMPORTS
+import Link from "next/link";
+
 // LIBRARIES
 import * as motion from "motion/react-client";
 
 // COMPONENTS
 import { Button } from "@/components/ui/button";
+
 
 export const CTASection = () => {
     return (
@@ -18,8 +22,10 @@ export const CTASection = () => {
                 <h2 className="text-5xl md:text-7xl font-bold mb-8">Ready to Shine?</h2>
                 <p className="text-xl md:text-2xl mb-12">Join Vocal Aura and let us help you reach new heights in your musical journey.</p>
                 
-                <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
+                <Button size="lg" variant="secondary" className="text-lg px-8 py-6" asChild>
+                    <Link href="/contact-us">
                     Start Your Journey
+                    </Link>
                 </Button>
             </motion.div>
         </section>
