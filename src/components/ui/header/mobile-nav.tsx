@@ -2,25 +2,34 @@
 
 // NEXTJS IMPORTS
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 // LIBRARIES
 import { motion, AnimatePresence } from "framer-motion"
 
 // COMPONENTS
 import { Button } from "@/components/ui/button"
+import { DefaultButton } from "./default-button"
+import { ScrolledButton } from "./scrolled-button"
 
 // DATA
-import { menuItems } from "./header-data"
-
-// LUCIDE ICONS
-import { Phone } from "lucide-react"
+import { leftMenuItems, rightMenuItems } from "./header-data"
 
 interface MobileNavProps {
   isOpen: boolean
   onClose: () => void
+  isScrolled: boolean
 }
 
-export const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
+export const MobileNav = ({ 
+  isOpen, 
+  onClose, 
+  isScrolled 
+}: MobileNavProps) => {
+  const pathname = usePathname();
+
+  const allMenuItems = [...leftMenuItems, ...rightMenuItems];
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -31,7 +40,7 @@ export const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
           className="md:hidden bg-black/95 border-t border-white/10"
         >
           <div className="px-4 py-6 space-y-4">
-            {menuItems.map((item) => (
+            {allMenuItems.map((item) => (
               <Button
                 key={item.label}
                 variant="ghost"
@@ -46,16 +55,9 @@ export const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
               </Button>
             ))}
 
-            <Button
-              asChild
-              className="w-full bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 text-white mt-4"
-              onClick={onClose}
-            >
-              <Link href="/contact-us">
-                <Phone className="mr-2 h-4 w-4" />
-                Contact Us
-              </Link>
-            </Button>
+            <div onClick={onClose}>
+              {isScrolled || pathname === "/contact-us" ? <ScrolledButton /> : <DefaultButton />}
+            </div>
           </div>
         </motion.div>
       )}

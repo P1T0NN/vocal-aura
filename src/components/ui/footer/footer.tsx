@@ -10,21 +10,13 @@ const quickLinks = [
   { label: "About", href: "/#about" },
 ]
 
-const serviceLinks = [
-  { label: "Artist Management", href: "/services/management" },
-  { label: "Music Production", href: "/services/production" },
-  { label: "Event Booking", href: "/services/booking" },
-  { label: "Promotion", href: "/services/promotion" },
-]
-
 export const Footer = () => {
   return (
     <footer className="bg-black text-white">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <FooterBrand />
           <FooterLinks title="Quick Links" links={quickLinks} />
-          <FooterLinks title="Services" links={serviceLinks} />
           <FooterContact />
         </div>
 

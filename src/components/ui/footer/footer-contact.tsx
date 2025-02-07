@@ -1,3 +1,6 @@
+// NEXTJS IMPORTS
+import Link from "next/link";
+
 // CONFIG
 import { STREET_ADDRESS, CITY, POSTAL_CODE, COUNTRY, INFO_EMAIL, BOOKINGS_EMAIL } from "@/config";
 
@@ -19,9 +22,11 @@ export const FooterContact = () => {
                 <p>Bookings: {BOOKINGS_EMAIL}</p>
             </div>
             
-            <Button className="mt-4 bg-purple-600 hover:bg-purple-700">
-                <Mail className="mr-2 h-4 w-4" />
-                Get in Touch
+            <Button className="mt-4 bg-purple-600 hover:bg-purple-700" asChild>
+                <Link href="/contact-us">
+                    <Mail className="mr-2 h-4 w-4" />
+                    Get in Touch
+                </Link>
             </Button>
         </div>
     )
