@@ -10,7 +10,7 @@ import { artists } from "@/data/artists";
 
 export const FeaturedArtistsSection = () => {
   return (
-    <section id="artists" className="py-24 bg-black text-white">
+    <section id="artists" className="py-24 bg-gradient-to-b from-background via-background to-black">
       <div className="container mx-auto px-4">
 
         <motion.div
@@ -19,7 +19,7 @@ export const FeaturedArtistsSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold mb-4">Featured Artists</h2>
+          <h2 className="text-5xl font-bold text-black mb-4">Featured Artists</h2>
           <p className="text-xl text-gray-400">Discover our exceptional talent roster</p>
         </motion.div>
 
@@ -47,7 +47,7 @@ export const FeaturedArtistsSection = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-bold mb-1">{artist.artistName}</h3>
+                  <h3 className="text-xl font-bold text-white mb-1">{artist.artistName}</h3>
                   <p className="text-gray-300">{artist.niche}</p>
                 </div>
               </div>

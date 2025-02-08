@@ -40,7 +40,7 @@ const contactItems: ContactItem[] = [
         icon: MessageSquare,
         title: "Social Media",
         description: [
-            { value: "@vocalaura on all platforms" }
+            { value: "@vocalaura.ent on all platforms" }
         ],
     },
 ]

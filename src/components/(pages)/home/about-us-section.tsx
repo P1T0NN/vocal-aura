@@ -2,28 +2,28 @@
 import * as motion from "motion/react-client";
 
 // LUCIDE ICONS
-import { Music, Users, Star, Globe } from "lucide-react";
+import { Users, Calendar, Music, Megaphone } from "lucide-react";
 
 const features = [
     {
-        icon: Music,
-        title: "Musical Excellence",
-        description: "We cultivate and promote exceptional vocal talent across diverse genres."
-    },
-    {
         icon: Users,
-        title: "Artist Development",
-        description: "Comprehensive support for artists to reach their full potential."
+        title: "Talent Management",
+        description: "Comprehensive career guidance and strategic development for artists."
     },
     {
-        icon: Star,
-        title: "Industry Expertise",
-        description: "Years of experience in talent management and music production."
+        icon: Calendar,
+        title: "Artist Booking",
+        description: "Securing performance opportunities at prestigious venues and events."
     },
     {
-        icon: Globe,
-        title: "Global Reach",
-        description: "Connecting artists with audiences worldwide through strategic partnerships."
+        icon: Music,
+        title: "Event Curation",
+        description: "Creating memorable music experiences with handpicked talent."
+    },
+    {
+        icon: Megaphone,
+        title: "Music Promotion",
+        description: "Strategic marketing and PR to amplify your musical journey."
     }
 ]
 
@@ -39,10 +39,10 @@ export const AboutSection = () => {
                         transition={{ duration: 0.8 }}
                         className="space-y-6"
                     >
-                        <h2 className="text-5xl font-bold">Empowering Vocal Artists</h2>
+                        <h2 className="text-5xl font-bold">Empowering Artists</h2>
                         <p className="text-xl text-gray-400">
                             At Vocal Aura, we&apos;re more than just a talent agency. We&apos;re a community dedicated to discovering, 
-                            developing, and amplifying extraordinary vocal talent. Our mission is to bridge the gap between 
+                            developing, and amplifying extraordinary talent. Our mission is to bridge the gap between 
                             exceptional artists and global opportunities.
                         </p>
                     </motion.div>

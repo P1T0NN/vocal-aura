@@ -24,7 +24,7 @@ export const CTASection = () => {
                 
                 <Button size="lg" variant="secondary" className="text-lg px-8 py-6" asChild>
                     <Link href="/contact-us">
-                    Start Your Journey
+                        Start Your Journey
                     </Link>
                 </Button>
             </motion.div>

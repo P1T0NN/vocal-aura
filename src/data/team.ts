@@ -5,7 +5,7 @@ const TEAM_IMAGES_PATH = 'team';
 
 export const team: typesTeamMember[] = [
     { 
-        name: "Gio",
+        name: "Giovanni",
         role: "CEO", 
         image: `${TEAM_IMAGES_PATH}/gio.jpg`,
         bio: `Born in the Bay Area, California, Giovanni Polizzi is an entrepreneur, leader, and visionary with a deep passion for music and sports. 
@@ -26,17 +26,6 @@ export const team: typesTeamMember[] = [
             and Giovanni started Vocal Aura Ent. in. As a co-founder and Chief Operations Officer of Vocal Aura, Adam heads the daily tasks as well as heading the artistry department and live event planning. 
             With a driving passion for the live sector, Adam’s stupid ideas work hand-in-hand with Vocal Aura’s many ambitions.`,
         bio2: `Currently a Master’s student at Berklee Valencia, he is working to complete his degree in Music Business and Global Entertainment.`
-    },
-    { 
-        name: "Antonio", 
-        role: "Strategy Advisor", 
-        image: `${TEAM_IMAGES_PATH}/antonio.jpg`,
-        bio: `Antonio is the driving force that keeps our vision sharp and our momentum strong. A natural leader, innovator, and team player, 
-            he thrives on pushing boundaries and turning ideas into action. His entrepreneurial spirit is fueled by a simple 
-            yet powerful goal: to make our audience feel the same electrifying energy he experienced at his first Anne Noor concert. 
-            That moment of connection is what made him believe in Vocal Aura—and it's the spark he’s determined to ignite in everything we do.`,
-        bio2: `Passionate about reimagining Valencia’s nightlife, Antonio’s mission is clear: no more dull nights, no more monotony. 
-            With his strategic mind and relentless enthusiasm, he’s here to make Valencia vibrant, dynamic, and unforgettable once again.`
     },
     { 
         name: "Denny", 
@@ -66,5 +55,16 @@ export const team: typesTeamMember[] = [
             she leads creative projects within the company with a wide vision that exceeds all regular 
             experiences limited by the current place she is in. With a background in sales and marketing, 
             she has worked across the globe from Canada to the Netherlands, all the way to Japan.`
+    },
+    { 
+        name: "Antonio", 
+        role: "Strategy Advisor", 
+        image: `${TEAM_IMAGES_PATH}/antonio.jpg`,
+        bio: `Antonio is the driving force that keeps our vision sharp and our momentum strong. A natural leader, innovator, and team player, 
+            he thrives on pushing boundaries and turning ideas into action. His entrepreneurial spirit is fueled by a simple 
+            yet powerful goal: to make our audience feel the same electrifying energy he experienced at his first Anne Noor concert. 
+            That moment of connection is what made him believe in Vocal Aura—and it's the spark he’s determined to ignite in everything we do.`,
+        bio2: `Passionate about reimagining Valencia’s nightlife, Antonio’s mission is clear: no more dull nights, no more monotony. 
+            With his strategic mind and relentless enthusiasm, he’s here to make Valencia vibrant, dynamic, and unforgettable once again.`
     },
 ]
