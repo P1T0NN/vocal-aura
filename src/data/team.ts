@@ -21,10 +21,10 @@ export const team: typesTeamMember[] = [
         name: "Adam", 
         role: "COO", 
         image: `${TEAM_IMAGES_PATH}/adam.jpg`,
-        bio: `Helling from Dallas, Texas, Adam Gadol’s journey stems from London, to Tel Aviv, Chicago, Los Angeles, and now Valencia, Spain. 
+        bio: `Hailing from Dallas, Texas, Adam Gadol’s journey stems from London, to Tel Aviv, Chicago, Los Angeles, and now Valencia, Spain. 
             The different cultures and learning environments has shaped his perception of the modern-entertainment scene in which he 
             and Giovanni started Vocal Aura Ent. in. As a co-founder and Chief Operations Officer of Vocal Aura, Adam heads the daily tasks as well as heading the artistry department and live event planning. 
-            With a driving passion for the live sector, Adam’s stupid ideas work hand-in-hand with Vocal Aura’s many ambitions.`,
+            With a driving passion for the live sector, Adam’s ideas work hand-in-hand with Vocal Aura’s many ambitions.`,
         bio2: `Currently a Master’s student at Berklee Valencia, he is working to complete his degree in Music Business and Global Entertainment.`
     },
     { 
