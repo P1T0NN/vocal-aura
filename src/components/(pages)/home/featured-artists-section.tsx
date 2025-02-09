@@ -1,5 +1,6 @@
 // NEXTJS IMPORTS
 import Image from "next/image";
+import Link from "next/link";
 
 // LIBRARIES
 import * as motion from "motion/react-client";
@@ -7,6 +8,9 @@ import { getStorageUrl } from "@/lib/supabase/storage";
 
 // DATA
 import { artists } from "@/data/artists";
+
+// LUCIDE ICONS
+import { Mic, Music } from "lucide-react";
 
 export const FeaturedArtistsSection = () => {
   return (
@@ -25,33 +29,42 @@ export const FeaturedArtistsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {artists.map((artist, index) => (
-            <motion.div
-              key={artist.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ y: -10 }}
-              className="group relative"
-            >
-              <div className="relative overflow-hidden rounded-lg aspect-[3/4]">
-                <Image
-                  src={getStorageUrl(artist.image)}
-                  alt={artist.name}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                  className={`
-                    transform group-hover:scale-110 transition-transform duration-500
-                    ${artist.name === "Anne Noor" ? "object-cover object-[80%_center]" : "object-cover"}
-                  `}
-                  quality={90}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-bold text-white mb-1">{artist.artistName}</h3>
-                  <p className="text-gray-300">{artist.niche}</p>
+            <Link href={`/artist/${artist.urlValue}`} key={artist.name}>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ y: -10 }}
+                className="group relative"
+              >
+                <div className="relative overflow-hidden rounded-lg aspect-[3/4]">
+                  <Image
+                    src={getStorageUrl(artist.image)}
+                    alt={artist.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                    className={`
+                      transform group-hover:scale-110 transition-transform duration-500
+                      ${artist.name === "Anne Noor" ? "object-cover object-[80%_center]" : "object-cover"}
+                    `}
+                    quality={90}
+                  />
+                  {/* Artist Type Icon */}
+                  <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm p-2 rounded-full">
+                    {artist.name === "Anne Noor" ? (
+                      <Mic className="h-5 w-5 text-orange-500" />
+                    ) : (
+                      <Music className="h-5 w-5 text-orange-500" />
+                    )}
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-xl font-bold text-white mb-1">{artist.artistName}</h3>
+                    <p className="text-gray-300">{artist.niche}</p>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </Link>
           ))}
         </div>
       </div>

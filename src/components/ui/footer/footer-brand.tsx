@@ -5,13 +5,13 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 // LUCIDE ICONS
-import { Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 const socialLinks = [
     { Icon: Facebook, href: "https://facebook.com/vocalaura.ent" },
     { Icon: Twitter, href: "https://twitter.com/vocalaura" },
     { Icon: Instagram, href: "https://www.instagram.com/vocalaura.ent/" },
-    { Icon: Youtube, href: "https://youtube.com/@vocalaura" },
+    { Icon: Linkedin, href: "https://www.linkedin.com/in/vocal-aura-9086b9346/" },
 ];
 
 export const FooterBrand = () => {

@@ -41,9 +41,9 @@ export const AboutSection = () => {
                     >
                         <h2 className="text-5xl font-bold">Empowering Artists</h2>
                         <p className="text-xl text-gray-400">
-                            At Vocal Aura, we&apos;re more than just a talent agency. We&apos;re a community dedicated to discovering, 
-                            developing, and amplifying extraordinary talent. Our mission is to bridge the gap between 
-                            exceptional artists and global opportunities.
+                            We are a next-generation entertainment agency that operates with the unfiltered spirit of a startup - raw, 
+                            innovative and ambitious. Born from our shared passion for compelling sound, our team is dedicated to 
+                            discovering and elevating talent.
                         </p>
                     </motion.div>
 

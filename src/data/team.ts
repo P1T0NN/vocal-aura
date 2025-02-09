@@ -37,18 +37,8 @@ export const team: typesTeamMember[] = [
             and helps shape the future of independent music.`
     },
     { 
-        name: "Fabiana", 
-        role: "Marketing and Creative", 
-        image: `${TEAM_IMAGES_PATH}/fabiana.jpg`,
-        bio: `Born in Venezuela, Fabiana is a talented marketing professional who, at just 22, has already worked with top brands like Zara. 
-            Her expertise in branding, strategy, and creative direction makes her a key force at Vocal Aura Entertainment.`,
-        bio2: `Passionate about innovation, she transforms ideas into unforgettable experiences, constantly finding new ways to engage
-            audiences and elevate brand presence. With a sharp strategic vision and creative talent, Fabiana plays a crucial 
-            role in building strong brand identities and crafting compelling narratives. Her energy and dedication make her an invaluable asset to the team.`
-    },
-    { 
         name: "Malyka", 
-        role: "Creative Director", 
+        role: "Creative & Public Relations", 
         image: `${TEAM_IMAGES_PATH}/malyka.jpg`,
         bio: `Born in Canada to an Entrepreneur, Malyka has always been influenced by the innovative mindset of 
             someone turning passions into businesses. Having studied in International Business, 
@@ -66,5 +56,15 @@ export const team: typesTeamMember[] = [
             That moment of connection is what made him believe in Vocal Aura—and it's the spark he’s determined to ignite in everything we do.`,
         bio2: `Passionate about reimagining Valencia’s nightlife, Antonio’s mission is clear: no more dull nights, no more monotony. 
             With his strategic mind and relentless enthusiasm, he’s here to make Valencia vibrant, dynamic, and unforgettable once again.`
+    },
+    { 
+        name: "Fabiana", 
+        role: "Marketing and Creative", 
+        image: `${TEAM_IMAGES_PATH}/fabiana.jpg`,
+        bio: `Born in Venezuela, Fabiana is a talented marketing professional who, at just 22, has already worked with top brands like Zara. 
+            Her expertise in branding, strategy, and creative direction makes her a key force at Vocal Aura Entertainment.`,
+        bio2: `Passionate about innovation, she transforms ideas into unforgettable experiences, constantly finding new ways to engage
+            audiences and elevate brand presence. With a sharp strategic vision and creative talent, Fabiana plays a crucial 
+            role in building strong brand identities and crafting compelling narratives. Her energy and dedication make her an invaluable asset to the team.`
     },
 ]

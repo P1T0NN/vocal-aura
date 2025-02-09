@@ -13,7 +13,7 @@ export const TeamHero = () => {
 
     return (
         <section className="relative pt-32 pb-24 bg-black text-white overflow-hidden">
-        {/* Background Design Elements */}
+            {/* Background Design Elements */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-purple-500/10 via-transparent to-transparent rotate-12 blur-3xl" />
                 <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-tl from-pink-500/10 via-transparent to-transparent -rotate-12 blur-3xl" />
@@ -46,8 +46,8 @@ export const TeamHero = () => {
                                 {...fadeInUp}
                                 transition={{ delay: 0.4 + index * 0.2 }}
                             >
-                                <div className="bg-purple-500/20 p-4 rounded-full mb-4">
-                                    <item.icon className="w-8 h-8 text-purple-400" />
+                                <div className="bg-[#fd792d]/20 p-4 rounded-full mb-4">
+                                    <item.icon className="w-8 h-8 text-[#fd792d]" />
                                 </div>
                                 
                                 <h3 className="text-xl font-semibold mb-2">{item.title}</h3>

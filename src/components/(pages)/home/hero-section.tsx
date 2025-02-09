@@ -6,110 +6,71 @@ import { useRef } from "react";
 // NEXTJS IMPORTS
 import Link from "next/link";
 
-// LIBRARIES
-import { motion, useScroll, useTransform } from "framer-motion";
-
 // COMPONENTS
 import { Button } from "@/components/ui/button";
 
-
 // LUCIDE ICONS
-import { Sparkles } from "lucide-react";
+import { ChevronDown, Mic2, Music, Sparkles } from "lucide-react";
 
 export const HeroSection = () => {
     const containerRef = useRef(null);
 
-    const { scrollYProgress } = useScroll({
-        target: containerRef,
-        offset: ["start start", "end start"]
-    });
-
-    const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-
     return (
-        <section ref={containerRef} className="relative h-screen flex items-center justify-center overflow-hidden">
-            <motion.div 
-                style={{ y }}
-                className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500"
-            />
-            <div className="absolute inset-0 bg-black/50 z-10" />
-            
-            <motion.div
-                animate={{
-                    scale: [1, 1.2, 1],
-                    rotate: [0, 10, -10, 0],
-                }}
-                transition={{
-                    duration: 5,
-                    repeat: Infinity,
-                    repeatType: "reverse"
-                }}
-                className="absolute top-1/4 left-1/4 text-white/20 z-0"
-            >
-                <Sparkles className="h-20 w-20" />
-            </motion.div>
-            
-            <div className="relative z-20 text-center text-white px-4">
-                <motion.div
-                    className="relative mb-6 text-7xl md:text-9xl font-bold"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                >
-                    <span className="absolute top-0 left-0 -ml-1 -mt-1 text-red-500 opacity-70 animate-pulse">
-                        VOCAL AURA
-                    </span>
+        <section ref={containerRef} className="min-h-screen bg-gradient-to-br from-purple-900 via-rose-800 to-orange-700">
+            <main className="relative pt-16">
+                {/* Animated Background Elements */}
+                <div className="absolute inset-0 overflow-hidden">
+                    <div className="absolute -left-4 top-1/4 w-16 h-16 sm:w-24 sm:h-24 bg-purple-500/20 rounded-full blur-xl animate-pulse" />
+                    <div className="absolute right-1/4 top-1/3 w-20 h-20 sm:w-32 sm:h-32 bg-orange-500/20 rounded-full blur-xl animate-pulse delay-700" />
+                    <div className="absolute left-1/3 bottom-1/4 w-24 h-24 sm:w-40 sm:h-40 bg-rose-500/20 rounded-full blur-xl animate-pulse delay-1000" />
+                </div>
 
-                    <span className="absolute top-0 left-0 ml-1 mt-1 text-blue-500 opacity-70 animate-pulse">
-                        VOCAL AURA
-                    </span>
+                {/* Main Content */}
+                <div className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
+                    <div className="space-y-6 sm:space-y-8 text-center">
+                        {/* Floating Icons */}
+                        <div className="flex justify-center gap-4 sm:gap-8 mb-6 sm:mb-8">
+                            <Music className="w-6 h-6 sm:w-8 sm:h-8 text-orange-400 animate-bounce delay-100" />
+                            <Mic2 className="w-6 h-6 sm:w-8 sm:h-8 text-purple-400 animate-bounce delay-300" />
+                            <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 text-rose-400 animate-bounce delay-500" />
+                        </div>
 
-                    <span>VOCAL AURA</span>
-                </motion.div>
+                        {/* Main Title with Gradient */}
+                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+                            <span className="bg-gradient-to-r from-orange-400 via-rose-400 to-purple-400 text-transparent bg-clip-text animate-gradient">
+                                VOCALAURA
+                            </span>
+                        </h1>
 
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    className="relative text-2xl md:text-4xl mb-12 overflow-hidden"
-                >
-                    <motion.span
-                        animate={{
-                            opacity: [0, 1, 1, 0],
-                            y: [20, 0, 0, -20],
-                        }}
-                            transition={{
-                            duration: 4,
-                            repeat: Infinity,
-                            repeatType: "loop",
-                        }}
-                        className="block"
-                    >
-                        Where passion meets opportunity
-                    </motion.span>
-                </motion.div>
+                        {/* Tagline with Animation */}
+                        <p className="text-xl sm:text-2xl md:text-3xl text-white/90 font-light max-w-xs sm:max-w-sm md:max-w-xl lg:max-w-2xl mx-auto leading-relaxed">
+                            Where passion meets opportunity
+                        </p>
 
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.8, delay: 0.4 }}
-                    className="space-x-4"
-                >
-                    <Button size="lg" variant="secondary" className="relative overflow-hidden group" asChild>
-                        <Link href="/#artists">
-                            <span className="relative z-10">Discover Artists</span>
-                            <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity" />
-                        </Link>
-                    </Button>
+                        {/* CTA Buttons */}
+                        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8 sm:mt-12">
+                            <Button
+                                className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-orange-500 to-rose-500 text-white rounded-full font-medium hover:from-orange-600 hover:to-rose-600 transform hover:scale-105 transition-all w-full sm:w-auto"
+                                asChild
+                            >
+                                <Link href="/#artists">Discover Artists</Link>
+                            </Button>
 
-                    <Button size="lg" variant="secondary" className="relative overflow-hidden group" asChild>
-                        <Link href="/contact-us">
-                            <span className="relative z-10">Join Us</span>
-                            <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-pink-500 opacity-0 group-hover:opacity-20 transition-opacity" />
-                        </Link>
-                    </Button>
-                </motion.div>
-            </div>
+                            <Button
+                                className="px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-md text-white rounded-full font-medium hover:bg-white/20 transform hover:scale-105 transition-all w-full sm:w-auto"
+                                asChild
+                            >
+                                <Link href="/contact-us">Join Us</Link>
+                            </Button>
+                        </div>
+
+                        {/* Scroll Indicator */}
+                        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                            <ChevronDown className="w-6 h-6 text-white/50" />
+                        </div>
+                    </div>
+                </div>
+            </main>
         </section>
     );
 }

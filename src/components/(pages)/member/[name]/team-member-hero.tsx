@@ -19,7 +19,7 @@ export const TeamMemberHero = ({
         <section className="relative pt-32 pb-16 overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0">
-                <div className="absolute inset-0 bg-gradient-to-b from-purple-500/10 via-black to-black" />
+                <div className="absolute inset-0 bg-gradient-to-b from-orange-500/10 via-black to-black" />
                 <Image
                     src={getStorageUrl(member.image)}
                     alt={member.name}
@@ -37,7 +37,7 @@ export const TeamMemberHero = ({
                         transition={{ duration: 0.5 }}
                         className="relative w-64 h-64 md:w-80 md:h-80"
                     >
-                        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 animate-pulse" />
+                        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-orange-600 to-orange-500 animate-pulse" />
                         <Image
                             src={getStorageUrl(member.image)}
                             alt={member.name}
@@ -54,7 +54,7 @@ export const TeamMemberHero = ({
                         className="flex-1 text-center md:text-left"
                     >
                         <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">{member.name}</h1>
-                        <p className="text-xl md:text-2xl text-purple-400 mb-6">{member.role}</p>
+                        <p className="text-xl md:text-2xl text-orange-400 mb-6">{member.role}</p>
                     </motion.div>
                 </div>
             </div>

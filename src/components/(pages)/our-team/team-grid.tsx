@@ -10,8 +10,10 @@ import { team } from "@/data/team";
 
 export const TeamGrid = () => {
     return (
-        <section className="py-24 bg-gradient-to-b from-black to-background text-white">
-            <div className="container mx-auto px-4">
+        <section className="py-24 bg-gradient-to-b from-black via-black to-background relative text-white">
+            <div className="absolute inset-0 bg-black/80" />
+
+            <div className="relative container mx-auto px-4 z-10">
                 <div className="text-center mb-16">
                     <h2 className="text-5xl font-bold mb-4">Meet Our Team</h2>
                     <p className="text-xl text-gray-400">The faces behind your musical journey</p>
@@ -32,14 +34,18 @@ export const TeamGrid = () => {
                                         alt={member.name}
                                         fill
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                        className="relative rounded-full object-cover border-4 border-white object-[center_10%] group-hover:scale-105 transition-transform duration-300"
+                                        className={`
+                                            relative rounded-full object-cover border-4 border-white 
+                                            group-hover:scale-105 transition-transform duration-300
+                                            ${member.name === "Giovanni" ? "object-[75%_10%]" : "object-[center_10%]"}
+                                        `}
                                         quality={90}
                                         priority={index < 3}
                                     />
                                 </div>
 
                                 <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
-                                <p className="text-purple-600 font-bold mb-4">{member.role}</p>
+                                <p className="text-orange-500 font-bold mb-4">{member.role}</p>
                             </div>
                         </Link>
                     ))}
