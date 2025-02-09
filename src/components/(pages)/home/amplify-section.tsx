@@ -26,7 +26,7 @@ export const AmplifySection = () => {
                     <h2 className="text-4xl md:text-6xl font-bold mb-8">Amplify Your Sound</h2>
 
                     <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
-                        Join the next generation of musical talent at Vocal Aura
+                        Vocal Aura is a collective of dreamers and creative minds forging a space where artists can transform their narratives into a sound that embodies their most authentic expression of art.​ 
                     </p>
                 </div>
             </div>

@@ -30,8 +30,8 @@ export const TeamHero = () => {
                         {...fadeInUp}
                         transition={{ delay: 0.2 }}
                     >
-                        At Vocal Aura, our success is driven by a passionate team of industry veterans and creative minds. With
-                        decades of combined experience, we&apos;re committed to shaping the future of music entertainment.
+                        At Vocal Aura, our success is driven by a passionate team of hard workers with creative minds. With years
+                        of combined experience, we&apos;re committed to shaping the future of music entertainment.
                     </motion.p>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
