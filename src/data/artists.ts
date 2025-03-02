@@ -50,4 +50,28 @@ export const artists: typesArtist[] = [
         instagramLink: "https://www.instagram.com/jose13.a/",
         soundcloudLink: "https://soundcloud.com/user-958512710"
     },
+    {
+        name: "Abigaël Ama",
+        artistName: "Abigaël Ama",
+        urlValue: "abigael-ama",
+        niche: "Singer",
+        image: "/artists/abigael.jpg",
+        imageArtistPage: "/artists/abigael-page.jpg",
+        bio: [
+            "I'm Abigaël Ama, a name that carries a beautiful meaning—joy and connection—and that's exactly what I aim to create through my music. For over a decade, I’ve been part of the National Dutch Choir, and my love for the violin has been a constant companion since childhood, shaping the way I express myself musically.",
+            "In 2024 I’ve been performing on festivals in the Netherlands like Watdajel and Landjuweel and currently I am working on my debut album while studying Contemporary Performance at Berklee.",
+            "My sound is a soulful mix of indie, R&B, and Latin influences, built on layers of heartfelt vocals and acoustic melodies.",
+            "I’m passionate about creating music that touches hearts, sparking a deep sense of emotion and unity.",
+            "To me, music is more than just sound—it's a bridge that connects us, invites us to share, and brings us closer together."
+        ],
+        latestRelease: {
+            title: "NEVER GOOD ENOUGH",
+        },
+        activeSince: "2020",
+        origin: "NETHERLANDS",
+        style: "Latin influenced, Introspective",
+        genre: "Soul\nR&B",
+        instagramLink: "https://www.instagram.com/abigael.ama?igsh=bm10Z2hvYjFuN2Rl",
+        spotifyLink: "https://open.spotify.com/artist/1rDXo2HT1EfJfIBhGIxfYX?si=UnYuEFLhQyevVZdblk68VQ"
+    }
 ]
