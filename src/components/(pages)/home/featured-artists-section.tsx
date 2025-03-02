@@ -51,7 +51,7 @@ export const FeaturedArtistsSection = () => {
                   />
                   {/* Artist Type Icon */}
                   <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm p-2 rounded-full">
-                    {artist.name === "Anne Noor" ? (
+                    {artist.name === "Anne Noor" || artist.name === "Abigaël Ama" ? (
                       <Mic className="h-5 w-5 text-orange-500" />
                     ) : (
                       <Music className="h-5 w-5 text-orange-500" />
