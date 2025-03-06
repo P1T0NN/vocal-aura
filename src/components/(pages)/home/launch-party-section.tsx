@@ -29,7 +29,7 @@ export const LaunchPartySection = () => {
                 >
                     <h2 className="text-5xl font-bold mb-6">First Launch Party</h2>
                     <p className="text-xl text-gray-400">
-                        On February 21st, 2024, Vocal Aura Entertainment made its grand debut with an unforgettable launch party. 
+                        On February 21st, 2025, Vocal Aura Entertainment made its grand debut with an unforgettable launch party. 
                         This milestone event brought together artists, industry professionals, and music enthusiasts, 
                         marking the beginning of our journey to revolutionize the music industry in Valencia.
                     </p>
