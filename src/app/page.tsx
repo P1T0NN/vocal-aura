@@ -6,7 +6,7 @@ import { ServicesSection } from "@/components/(pages)/home/services-section";
 import { FeaturedArtistsSection } from "@/components/(pages)/home/featured-artists-section";
 import { TeamSection } from "@/components/(pages)/home/team-section";
 import { CTASection } from "@/components/(pages)/home/cta-section";
-
+import { LaunchPartySection } from "@/components/(pages)/home/launch-party-section";
 export default function Home() {
   return (
     <div>
@@ -16,6 +16,7 @@ export default function Home() {
         <AboutSection />
         <ServicesSection />
         <FeaturedArtistsSection />
+        <LaunchPartySection />
         <TeamSection />
         <CTASection />
       </main>

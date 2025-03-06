@@ -36,16 +36,16 @@ export const team: typesTeamMember[] = [
             connecting emerging talent with global opportunities. At Vocal Aura, he leads artist development, oversees music placement, 
             and helps shape the future of independent music.`
     },
-    { 
+    /*{ 
         name: "Malyka", 
-        role: "Creative & Public Relations", 
+        role: "Public Relations", 
         image: `${TEAM_IMAGES_PATH}/malyka.jpg`,
         bio: `Born in Canada to an Entrepreneur, Malyka has always been influenced by the innovative mindset of 
             someone turning passions into businesses. Having studied in International Business, 
             she leads creative projects within the company with a wide vision that exceeds all regular 
             experiences limited by the current place she is in. With a background in sales and marketing, 
             she has worked across the globe from Canada to the Netherlands, all the way to Japan.`
-    },
+    },*/
     { 
         name: "Antonio", 
         role: "Strategy Advisor", 
@@ -59,7 +59,7 @@ export const team: typesTeamMember[] = [
     },
     { 
         name: "Fabiana", 
-        role: "Marketing and Creative", 
+        role: "Creative", 
         image: `${TEAM_IMAGES_PATH}/fabiana.jpg`,
         bio: `Born in Venezuela, Fabiana is a talented marketing professional who, at just 22, has already worked with top brands like Zara. 
             Her expertise in branding, strategy, and creative direction makes her a key force at Vocal Aura Entertainment.`,
