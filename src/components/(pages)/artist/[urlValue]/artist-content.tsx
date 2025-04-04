@@ -33,7 +33,7 @@ export const ArtistContent = ({
                     fill
                     className={`
                         object-cover
-                        ${artist.name === "Jose" || artist.name === "Abigaël Ama" ? "object-[center_15%]" : "object-center"}
+                        ${artist.name === "Jose" ? "object-[center_15%]" : "object-center"}
                     `}
                     priority
                 />

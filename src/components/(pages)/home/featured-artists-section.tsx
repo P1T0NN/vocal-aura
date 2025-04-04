@@ -27,7 +27,7 @@ export const FeaturedArtistsSection = () => {
           <p className="text-xl text-gray-400">Discover our exceptional talent roster</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
           {artists.map((artist, index) => (
             <Link href={`/artist/${artist.urlValue}`} key={artist.name}>
               <motion.div
@@ -51,7 +51,7 @@ export const FeaturedArtistsSection = () => {
                   />
                   {/* Artist Type Icon */}
                   <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm p-2 rounded-full">
-                    {artist.name === "Anne Noor" || artist.name === "Abigaël Ama" ? (
+                    {artist.name === "Anne Noor" ? (
                       <Mic className="h-5 w-5 text-orange-500" />
                     ) : (
                       <Music className="h-5 w-5 text-orange-500" />

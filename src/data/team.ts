@@ -21,20 +21,11 @@ export const team: typesTeamMember[] = [
         name: "Adam", 
         role: "COO", 
         image: `${TEAM_IMAGES_PATH}/adam.jpg`,
-        bio: `Hailing from Dallas, Texas, Adam Gadol’s journey stems from London to Tel Aviv, Chicago to Los Angeles, and now Valencia, Spain. 
+        bio: `Hailing from Dallas, Texas, Adam Gadol's journey stems from London to Tel Aviv, Chicago to Los Angeles, and now Valencia, Spain. 
             The different cultures and learning environments have shaped his perception of the modern-entertainment scene in which he 
             and Giovanni started Vocal Aura Ent. in. As a co-founder and Chief Operations Officer of Vocal Aura, Adam heads the daily tasks as well as heading the artistry department and live event planning. 
-            With a driving passion for the live sector, Adam’s ideas work hand-in-hand with Vocal Aura’s many ambitions.`,
-        bio2: `Currently a Master’s student at Berklee Valencia, he is working to complete his degree in Music Business and Global Entertainment.`
-    },
-    { 
-        name: "Denny", 
-        role: "Head of A&R and Music Supervisor", 
-        image: `${TEAM_IMAGES_PATH}/denny.jpg`,
-        bio: `As the Head of A&R and Music Supervisor at Vocal Aura, Denny Lee specializes in artist scouting, brand development, 
-            and music curation. Originally from Taiwan, he has worked in the U.S. and London and is now based in Spain, 
-            connecting emerging talent with global opportunities. At Vocal Aura, he leads artist development, oversees music placement, 
-            and helps shape the future of independent music.`
+            With a driving passion for the live sector, Adam's ideas work hand-in-hand with Vocal Aura's many ambitions.`,
+        bio2: `Currently a Master's student at Berklee Valencia, he is working to complete his degree in Music Business and Global Entertainment.`
     },
     /*{ 
         name: "Malyka", 
@@ -53,9 +44,9 @@ export const team: typesTeamMember[] = [
         bio: `Antonio is the driving force that keeps our vision sharp and our momentum strong. A natural leader, innovator, and team player, 
             he thrives on pushing boundaries and turning ideas into action. His entrepreneurial spirit is fueled by a simple 
             yet powerful goal: to make our audience feel the same electrifying energy he experienced at his first Anne Noor concert. 
-            That moment of connection is what made him believe in Vocal Aura—and it's the spark he’s determined to ignite in everything we do.`,
-        bio2: `Passionate about reimagining Valencia’s nightlife, Antonio’s mission is clear: no more dull nights, no more monotony. 
-            With his strategic mind and relentless enthusiasm, he’s here to make Valencia vibrant, dynamic, and unforgettable once again.`
+            That moment of connection is what made him believe in Vocal Aura—and it's the spark he's determined to ignite in everything we do.`,
+        bio2: `Passionate about reimagining Valencia's nightlife, Antonio's mission is clear: no more dull nights, no more monotony. 
+            With his strategic mind and relentless enthusiasm, he's here to make Valencia vibrant, dynamic, and unforgettable once again.`
     },
     { 
         name: "Fabiana", 
