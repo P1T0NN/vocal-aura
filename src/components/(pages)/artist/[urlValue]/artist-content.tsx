@@ -35,7 +35,7 @@ export const ArtistContent = ({
                         object-cover
                         ${artist.name === "Jose" ? "object-[center_15%]" : "object-center"}
                     `}
-                    priority
+                    unoptimized
                 />
                 <div className="absolute inset-0 bg-black/40" />
             </div>

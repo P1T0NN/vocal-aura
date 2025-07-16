@@ -39,8 +39,7 @@ export const TeamGrid = () => {
                                             group-hover:scale-105 transition-transform duration-300
                                             ${member.name === "Giovanni" ? "object-[75%_10%]" : "object-[center_10%]"}
                                         `}
-                                        quality={90}
-                                        priority={index < 3}
+                                        unoptimized
                                     />
                                 </div>
 

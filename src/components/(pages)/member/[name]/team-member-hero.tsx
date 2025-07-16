@@ -25,7 +25,7 @@ export const TeamMemberHero = ({
                     alt={member.name}
                     fill
                     className="object-cover opacity-20 blur-sm object-[center_20%]"
-                    quality={90}
+                    unoptimized
                 />
             </div>
 
@@ -43,7 +43,7 @@ export const TeamMemberHero = ({
                             alt={member.name}
                             fill
                             className="relative rounded-full object-cover border-4 border-white object-[center_15%]"
-                            quality={90}
+                            unoptimized
                         />
                     </motion.div>
 

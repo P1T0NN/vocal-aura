@@ -47,7 +47,7 @@ export const FeaturedArtistsSection = () => {
                       transform group-hover:scale-110 transition-transform duration-500
                       ${artist.name === "Anne Noor" ? "object-cover object-[80%_center]" : "object-cover"}
                     `}
-                    quality={90}
+                    unoptimized
                   />
                   {/* Artist Type Icon */}
                   <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm p-2 rounded-full">

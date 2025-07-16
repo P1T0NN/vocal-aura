@@ -58,7 +58,7 @@ export const LaunchPartySection = () => {
                                             alt={`Launch Party Image ${image.id}`}
                                             fill
                                             className="object-cover"
-                                            priority={index < 4}
+                                            unoptimized
                                         />
                                     </motion.div>
                                 </CarouselItem>
@@ -85,7 +85,7 @@ export const LaunchPartySection = () => {
                                 alt={`Launch Party Image ${image.id}`}
                                 fill
                                 className="object-cover transform group-hover:scale-110 transition-transform duration-500"
-                                quality={90}
+                                unoptimized
                             />
                         </motion.div>
                     ))}
