@@ -45,7 +45,7 @@ export const LaunchPartySection = () => {
                         className="w-full"
                     >
                         <CarouselContent>
-                            {launchPartyImagesData.map((image, index) => (
+                            {launchPartyImagesData.map((image) => (
                                 <CarouselItem key={image.id} className="md:basis-1/1 lg:basis-1/1">
                                     <motion.div
                                         initial={{ opacity: 0, scale: 0.95 }}

@@ -20,7 +20,7 @@ export const TeamGrid = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
-                    {team.map((member, index) => (
+                    {team.map((member) => (
                         <Link 
                             href={`/member/${member.name}`} 
                             key={member.name}
